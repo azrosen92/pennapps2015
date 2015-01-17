@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<style>
+		body {
+		  font: 10px sans-serif;
+		}
+
+		.axis path,
+		.axis line {
+		  fill: none;
+		  stroke: #000;
+		  shape-rendering: crispEdges;
+		}
+
+		.button {
+			color: red;
+		}
+
+		.line {
+		  /*fill: none;*/
+		  stroke: steelblue;
+		  stroke-width: 1.5px;
+		}
+
+		</style>
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+		<link rel="shortcut icon" href="{{ url_for('static', filename='pennapps.ico') }}">
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<title>PennApps 2015 App</title>
+	</head>
+	<body>
+		<div class="chart"></div>
+	</body>
+	<script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
+</html>
